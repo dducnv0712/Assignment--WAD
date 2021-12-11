@@ -6,7 +6,7 @@
 <section>
     <div class="row py-4">
         <div class="col"></div>
-        <div class="col-md-8">
+        <div class="col-md-10">
             <div class="card mt-4">
                 <div class="card-body">
                     <table class="table">
@@ -24,14 +24,15 @@
                         <tbody>
                             @foreach (var item in Model)
                             {
-                                <tr>
-                                    <th scope="row">@Html.DisplayFor(modelItem => item.rollNumber)</th>
-                                    <td>@Html.DisplayFor(modelItem => item.fullName)</td>
-                                    <td>@Html.DisplayFor(modelItem => item.Method)</td>
-                                    <td>@Html.DisplayFor(modelItem => item.Fines)</td>
-                                    <td>@Html.DisplayFor(modelItem => item.Cause)</td>
-                                    <td>@Html.DisplayFor(modelItem => item.Date)</td>
-                                </tr>
+                            <tr>
+                                <th scope="row">@Html.DisplayFor(modelItem => item.Id)</th>
+                                <th>@Html.DisplayFor(modelItem => item.rollNumber)</th>
+                                <td>@Html.DisplayFor(modelItem => item.fullName)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Method)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Fines)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Cause)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Date)</td>
+                            </tr>
                             }
                         </tbody>
                     </table>

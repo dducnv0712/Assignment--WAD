@@ -8,7 +8,7 @@
         <div class="col-md-6">
             <div class="card mt-4">
                 <div class="card-body">
-                    @using (Html.BeginForm("Create", "Home", new { @class = "" }))
+                    @using (Html.BeginForm())
                     {
                         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                         @Html.AntiForgeryToken()
@@ -23,10 +23,35 @@
                             @Html.ValidationMessageFor(m => m.fullName, "", new { @class = "text-danger" })
                         </div>
                         <div class="mb-3">
+                            @Html.LabelFor(m => m.Method, new { @class = "form-label" })
+                            <div>
+                                <div class="form-check">
+                                    @Html.RadioButtonFor(m => m.Method, "Money", new { @class = "form-check-input", @checked="checked",@id = "money" })
+                                    <label class="form-check-label" for="money">
+                                        Đóng Tiền
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    @Html.RadioButtonFor(m => m.Method, "Push_Up", new { @class = "form-check-input", @id = "pushup" })
+                                    <label class="form-check-label" for="pushup">
+                                        Chống Đẩy
+                                    </label>
+                                </div>
+                              @*  <div class="form-check">
+                                    @Html.RadioButtonFor(m => m.Method, "other", new { @class = "form-check-input", @id = "other" })
+                                    <label class="form-check-label" for="other">
+                                        Hình Thức Khác
+                                    </label>
+                                </div>*@
+
+                            </div>
+        
+                            @Html.ValidationMessageFor(m => m.Method, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="mb-3">
                             @Html.LabelFor(m => m.Fines, new { @class = "form-label" })
                             @Html.TextBoxFor(m => m.Fines, new { @class = "form-control" })
                             @Html.ValidationMessageFor(m => m.Fines, "", new { @class = "text-danger" })
-
                         </div>
                         <div class="mb-3">
                             @Html.LabelFor(m => m.Cause, new { @class = "form-label" })

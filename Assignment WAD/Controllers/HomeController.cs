@@ -24,7 +24,7 @@ namespace Assignment_WAD.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "rollNumber,fullName,Fines,Cause")] StudentLate st) {
+        public ActionResult Create([Bind(Include = "rollNumber,fullName,Method,Fines,Cause")] StudentLate st) {
             if (ModelState.IsValid)
             {
                 myDBContext.StudentLate.Add(st);

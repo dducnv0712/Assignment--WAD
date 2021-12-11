@@ -7,6 +7,7 @@ using System.Web;
 
 namespace Assignment_WAD.Models
 {
+
     public class StudentLate
     {
         [DisplayName("#")]
@@ -26,7 +27,18 @@ namespace Assignment_WAD.Models
         [Required(ErrorMessage = "Vui Lòng Nhập Nguyên Nhân Đóng Phạt")]
         [DisplayName("Nguyên Nhân")]
         public string Cause { get; set; }
+        private DateTime? dateCreated;
         [DisplayName("Ngày Nộp Phạt")]
-        public DateTime Date { get; set; }
+        public DateTime Date
+        {
+            get { return dateCreated ?? DateTime.Now; }
+            set { dateCreated = value; }
+        }
     }
+/*    public enum Fines
+    {
+        Monney,
+        PushUp,
+        Other
+    }*/
 }
