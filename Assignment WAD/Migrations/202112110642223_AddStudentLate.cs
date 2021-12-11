@@ -15,7 +15,7 @@
                         rollNumber = c.String(nullable: false),
                         fullName = c.String(nullable: false),
                         Method = c.String(nullable: false),
-                        Fines = c.String(nullable: false),
+                        Fines = c.Int(nullable: false),
                         Cause = c.String(nullable: false),
                         Date = c.DateTime(nullable: false),
                     })
