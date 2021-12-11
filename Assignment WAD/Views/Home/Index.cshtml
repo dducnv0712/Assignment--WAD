@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<Assignment_WAD.Models.StudentLate>
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Danh Sách Sinh Viên Đóng Phạt";
 }
 
 <section>
@@ -8,6 +8,9 @@
         <div class="col"></div>
         <div class="col-md-10">
             <div class="card mt-4">
+                <div class="card-header">
+                    <h2 class="fw-bold">Danh Sách Thêm Sinh Viên Đóng Phạt</h2>
+                </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
@@ -24,17 +27,43 @@
                         <tbody>
                             @foreach (var item in Model)
                             {
-                            <tr>
-                                <th scope="row">@Html.DisplayFor(modelItem => item.Id)</th>
-                                <th>@Html.DisplayFor(modelItem => item.rollNumber)</th>
-                                <td>@Html.DisplayFor(modelItem => item.fullName)</td>
-                                <td>@Html.DisplayFor(modelItem => item.Method)</td>
-                                <td>@Html.DisplayFor(modelItem => item.Fines)</td>
-                                <td>@Html.DisplayFor(modelItem => item.Cause)</td>
-                                <td>@Html.DisplayFor(modelItem => item.Date)</td>
-                            </tr>
+                                <tr>
+                                    <th scope="row">@Html.DisplayFor(modelItem => item.Id)</th>
+                                    <th>@Html.DisplayFor(modelItem => item.rollNumber)</th>
+                                    <td>@Html.DisplayFor(modelItem => item.fullName)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Method)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Fines)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Cause)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Date)</td>
+                                </tr>
                             }
                         </tbody>
+                        <tfoot>
+                            @{ 
+                                var money = 0;
+                                var pushUp = 0;
+
+                                foreach (var total in Model) {
+                                    if (total.Method == "Money") {
+                                        money += total.Fines;
+
+                                    }
+                                    if (total.Method == "Push_Up") {
+                                        pushUp += total.Fines;
+                                    }
+
+                                }
+                            }
+                            <tr>
+                                <th scope="row"></th>
+                                <th scope="row"></th>
+                                <th scope="row"></th>
+                                <th scope="row"></th>
+                                <th scope="row"></th>
+                                <th ><span class="fw-bold">Tổng Số Chống Đẩy:</span> @pushUp Cái</th>
+                                <td ><span class="fw-bold">Tổng Tiền:</span>@money VND </td>
+                            </tr>
+                        </tfoot>
                     </table>
                 </div>
             </div>

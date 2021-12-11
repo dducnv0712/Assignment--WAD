@@ -23,7 +23,7 @@ namespace Assignment_WAD.Models
         public string Method { get; set; }
         [Required(ErrorMessage = "Vui Lòng Nhập Phương Thức Đóng Phạt")]
         [DisplayName("Nộp Phạt")]
-        public string Fines { get; set; }
+        public int Fines { get; set; }
         [Required(ErrorMessage = "Vui Lòng Nhập Nguyên Nhân Đóng Phạt")]
         [DisplayName("Nguyên Nhân")]
         public string Cause { get; set; }
