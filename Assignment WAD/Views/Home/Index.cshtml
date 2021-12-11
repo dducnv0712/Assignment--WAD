@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Assignment_WAD.Models.StudentLate>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<section>
+    <div class="row py-4">
+        <div class="col"></div>
+        <div class="col-md-8">
+            <div class="card mt-4">
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">@Html.DisplayNameFor(m => m.Id)</th>
+                                <th scope="col">@Html.DisplayNameFor(m => m.rollNumber)</th>
+                                <th scope="col">@Html.DisplayNameFor(m => m.fullName)</th>
+                                <th scope="col">@Html.DisplayNameFor(m => m.Method)</th>
+                                <th scope="col">@Html.DisplayNameFor(m => m.Fines)</th>
+                                <th scope="col">@Html.DisplayNameFor(m => m.Cause)</th>
+                                <th scope="col">@Html.DisplayNameFor(m => m.Date)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <th scope="row">@Html.DisplayFor(modelItem => item.rollNumber)</th>
+                                    <td>@Html.DisplayFor(modelItem => item.fullName)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Method)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Fines)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Cause)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Date)</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</section>
