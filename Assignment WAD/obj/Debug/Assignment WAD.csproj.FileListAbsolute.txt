@@ -81,3 +81,5 @@ E:\C#_learning\Assignment-WAD\Assignment WAD\bin\EntityFramework.dll
 E:\C#_learning\Assignment-WAD\Assignment WAD\bin\EntityFramework.SqlServer.dll
 E:\C#_learning\Assignment-WAD\Assignment WAD\bin\EntityFramework.xml
 E:\C#_learning\Assignment-WAD\Assignment WAD\bin\EntityFramework.SqlServer.xml
+E:\C#_learning\Assignment-WAD\Assignment WAD\obj\Debug\Assignment_WAD.Migrations.AddStudentLate.resources
+E:\C#_learning\Assignment-WAD\Assignment WAD\obj\Debug\Assignment WAD.csproj.GenerateResource.cache

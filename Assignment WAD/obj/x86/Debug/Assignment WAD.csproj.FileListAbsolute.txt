@@ -1,8 +1,6 @@
-E:\C#_learning\Assignment-WAD\Assignment WAD\obj\x86\Debug\Assignment WAD.csproj.AssemblyReference.cache
-E:\C#_learning\Assignment-WAD\Assignment WAD\obj\x86\Debug\Assignment WAD.csproj.CoreCompileInputs.cache
-E:\C#_learning\Assignment-WAD\Assignment WAD\bin\AssignmentWAD.dll.config
-E:\C#_learning\Assignment-WAD\Assignment WAD\bin\AssignmentWAD.dll
-E:\C#_learning\Assignment-WAD\Assignment WAD\bin\AssignmentWAD.pdb
+E:\C#_learning\Assignment-WAD\Assignment WAD\bin\Assignment WAD.dll.config
+E:\C#_learning\Assignment-WAD\Assignment WAD\bin\Assignment WAD.dll
+E:\C#_learning\Assignment-WAD\Assignment WAD\bin\Assignment WAD.pdb
 E:\C#_learning\Assignment-WAD\Assignment WAD\bin\roslyn\csc.exe
 E:\C#_learning\Assignment-WAD\Assignment WAD\bin\roslyn\csc.exe.config
 E:\C#_learning\Assignment-WAD\Assignment WAD\bin\roslyn\csc.rsp
@@ -78,8 +76,10 @@ E:\C#_learning\Assignment-WAD\Assignment WAD\bin\System.Web.WebPages.Razor.xml
 E:\C#_learning\Assignment-WAD\Assignment WAD\bin\Newtonsoft.Json.xml
 E:\C#_learning\Assignment-WAD\Assignment WAD\bin\Antlr3.Runtime.pdb
 E:\C#_learning\Assignment-WAD\Assignment WAD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\C#_learning\Assignment-WAD\Assignment WAD\obj\x86\Debug\Assignment WAD.csproj.CopyComplete
-E:\C#_learning\Assignment-WAD\Assignment WAD\obj\x86\Debug\AssignmentWAD.dll
-E:\C#_learning\Assignment-WAD\Assignment WAD\obj\x86\Debug\AssignmentWAD.pdb
+E:\C#_learning\Assignment-WAD\Assignment WAD\obj\x86\Debug\Assignment WAD.csproj.AssemblyReference.cache
 E:\C#_learning\Assignment-WAD\Assignment WAD\obj\x86\Debug\Assignment_WAD.Migrations.AddStudentLate.resources
 E:\C#_learning\Assignment-WAD\Assignment WAD\obj\x86\Debug\Assignment WAD.csproj.GenerateResource.cache
+E:\C#_learning\Assignment-WAD\Assignment WAD\obj\x86\Debug\Assignment WAD.csproj.CoreCompileInputs.cache
+E:\C#_learning\Assignment-WAD\Assignment WAD\obj\x86\Debug\Assignment WAD.csproj.CopyComplete
+E:\C#_learning\Assignment-WAD\Assignment WAD\obj\x86\Debug\Assignment WAD.dll
+E:\C#_learning\Assignment-WAD\Assignment WAD\obj\x86\Debug\Assignment WAD.pdb
