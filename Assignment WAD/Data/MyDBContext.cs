@@ -13,6 +13,6 @@ namespace StudentManage.Data
         {
 
         }
-        public DbSet<StudentLate> Students { get; set; }
+        public DbSet<StudentLate> StudentLate { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace Assignment_WAD.Controllers
         private MyDBContext myDBContext = new MyDBContext();
         public ActionResult Index()
         {
-            var result = myDBContext.Students.ToList();
+            var result = myDBContext.StudentLate.ToList();
             return View(result);
         }
 
@@ -27,7 +27,7 @@ namespace Assignment_WAD.Controllers
         public ActionResult Create([Bind(Include = "rollNumber,fullName,Fines,Cause")] StudentLate st) {
             if (ModelState.IsValid)
             {
-                myDBContext.Students.Add(st);
+                myDBContext.StudentLate.Add(st);
                 myDBContext.SaveChanges();
                 return RedirectToAction("Index");
             }
